@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/5b1711f32d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <!-- Navegador -->
+    <nav class="navbar shadow-sm sticky-top navbar-light bg-light justify-content-around">
+
+        <span class="navbar-brand mb-0 h1 text-secondary font-weigth-bolder" style="font-family: 'Merienda One';">
+            <i class="fab fa-instagram"></i>
+            Instagram
+        </span>
+
+        <ul class="nav">
+            <li class="nav-item">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createPost">
+                    Create a new post
+                </button>
+            </li>
+
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button type="button" class="btn btn-ligth text-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-end">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Modal -->
+    <div class=" modal fade" id="createPost" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <form action="">
+                        <textarea class="form-control dark" style="border: 1px solid black"></textarea>
+                    </form>
+                    <div class=" pt-3">
+                        <button type="button" class="btn btn-outline-primary text-dark">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary text-dark">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botones formato -->
+    <ul class="nav nav-pills mb-3 justify-content-center mt-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-cuadricula-tab" data-bs-toggle="pill" data-bs-target="#pills-cuadricula" type="button" role="tab" aria-controls="pills-cuadricula" aria-selected="true"><i class="fas fa-th"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id=" pills-post-tab" data-bs-toggle="pill" data-bs-target="#pills-post" type="button" role="tab" aria-controls="pills-post" aria-selected="false"><i class="fas fa-square"></i></button>
+        </li>
+    </ul>
+
+    <!-- Fotos en formato cuadricula -->
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-cuadricula" role="tabpanel" aria-labelledby="pills-cuadricula-tab">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-1">
+                        <img src=" https://cdn.pixabay.com/photo/2019/09/10/09/23/dog-4465690__340.jpg" alt="Bulldog" class="w-100 h-100">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-1">
+                        <img src=" https://cdn.pixabay.com/photo/2022/04/18/02/24/architecture-7139263__340.jpg" alt="architecture" class="w-100 h-100">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 pb-1">
+                        <img src=" https://cdn.pixabay.com/photo/2022/04/18/16/16/ship-7140939__340.jpg" alt="crucero" class="px-5 w-100 h-100">
+                    </div>
+                </div>
+                <div class="row justify-content-center ">
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-1">
+                        <img src="https://free-images.com/md/402f/hoover_nevada_arizona_colorado.jpg" alt="nevada" class="w-100 h-100">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-1">
+                        <img src="https://free-images.com/md/9e46/white_bengal_tiger_tiger_0.jpg" alt="tiger" class="w-100 h-100">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 pb-1">
+                        <video autoplay muted loop preload="auto" class="px-3 w-100 h-100 multimedia">
+                            <source src="https://player.vimeo.com/external/346036445.sd.mp4?s=98a73a063248b2b0b1d352e250c8358b7fa9e9d5&profile_id=164" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-1">
+                        <img src="https://free-images.com/md/1855/new_york_skyline_usa.jpg" alt="new york" class="w-100 h-100">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-1">
+                        <img src="https://free-images.com/md/672a/pennsylvania_landscape_scenic_97427.jpg" alt="pennsylvania" class="w-100 h-100">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 pb-1">
+                        <img src="https://free-images.com/md/ce8c/rabbits_cute_svg.jpg" alt="rabbits" class="w-100 h-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Posts -->
+        <div class="tab-pane fade" id="pills-post" role="tabpanel" aria-labelledby="pills-post-tab">
+            <div class="container-fluid bg-secondary p-4">
+
+                <div class="card mx-auto mb-5">
+                    <div class="card-body p-0">
+                        <div class=" card-title d-flex bd-highlight p-2">
+                            <div class="w-100 bd-highlight">
+                                <h4>Mi First photo</h4>
+                            </div>
+                            <div class="flex-shrink-1 bd-highlight">
+                                <p class="text-muted">12/14</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src=" https://cdn.pixabay.com/photo/2019/09/10/09/23/dog-4465690__340.jpg" alt="Bulldog" class="w-100">
+                        </div>
+                        <p class="fw-bolder pt-3 fs-6 px-3">23 likes</p>
+                        <p class="card-text px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quae
+                            harum explicabo temporibus illo alias deserunt sit molestiae corporis voluptate placeat.
+                            deserunt sit molestiae corporis voluptate placeat.</p>
+                        <div class="d-flex bd-highlight pb-2">
+                            <div class="w-100 bd-highlight">
+                                <p class="text-secondary mb-0 fs-6 px-3"><i class=" fa fa-heart-o me-3" aria-hidden="true"></i> Comment ...</p>
+                            </div>
+                            <div class="px-3 flex-shrink-1 bd-highlight">
+                                <i class="fas fa-ellipsis-v text-secondary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card  mx-auto mb-5">
+                    <div class=" card-body p-0">
+                        <div class=" card-title d-flex bd-highlight p-2">
+                            <div class="w-100 bd-highlight">
+                                <h4>Mi First photo</h4>
+                            </div>
+                            <div class="flex-shrink-1 bd-highlight">
+                                <p class="text-muted">12/14</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://cdn.pixabay.com/photo/2022/04/18/02/24/architecture-7139263__340.jpg" alt="architecture" class="w-100">
+                        </div>
+                        <p class="fw-bolder pt-3 fs-6 px-3">23 likes</p>
+                        <p class="card-text px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quae
+                            harum explicabo temporibus illo alias deserunt sit molestiae corporis voluptate placeat.
+                            deserunt sit molestiae corporis voluptate placeat.</p>
+                        <div class="d-flex bd-highlight pb-2">
+                            <div class="w-100 bd-highlight">
+                                <p class="text-secondary mb-0 fs-6 px-3"><i class=" fa fa-heart-o me-3" aria-hidden="true"></i> Comment ...</p>
+                            </div>
+                            <div class="px-3 flex-shrink-1 bd-highlight">
+                                <i class="fas fa-ellipsis-v text-secondary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card  mx-auto mb-5">
+                    <div class=" card-body p-0">
+                        <div class=" card-title d-flex bd-highlight p-2">
+                            <div class="w-100 bd-highlight">
+                                <h4>Mi First photo</h4>
+                            </div>
+                            <div class="flex-shrink-1 bd-highlight">
+                                <p class="text-muted">12/14</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://cdn.pixabay.com/photo/2022/04/18/16/16/ship-7140939__340.jpg" alt="crucero" class="w-100">
+                        </div>
+                        <p class="fw-bolder pt-3 fs-6 px-3">23 likes</p>
+                        <p class="card-text px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quae
+                            harum explicabo temporibus illo alias deserunt sit molestiae corporis voluptate placeat.
+                            deserunt sit molestiae corporis voluptate placeat.</p>
+                        <div class="d-flex bd-highlight pb-2">
+                            <div class="w-100 bd-highlight">
+                                <p class="text-secondary mb-0 fs-6 px-3"><i class=" fa fa-heart-o me-3" aria-hidden="true"></i> Comment ...</p>
+                            </div>
+                            <div class="px-3 flex-shrink-1 bd-highlight">
+                                <i class="fas fa-ellipsis-v text-secondary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card  mx-auto mb-5">
+                    <div class=" card-body p-0">
+                        <div class=" card-title d-flex bd-highlight p-2">
+                            <div class="w-100 bd-highlight">
+                                <h4>Mi First photo</h4>
+                            </div>
+                            <div class="flex-shrink-1 bd-highlight">
+                                <p class="text-muted">12/14</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://free-images.com/md/402f/hoover_nevada_arizona_colorado.jpg" alt="nevada" class="w-100">
+                        </div>
+                        <p class="fw-bolder pt-3 fs-6 px-3">23 likes</p>
+                        <p class="card-text px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quae
+                            harum explicabo temporibus illo alias deserunt sit molestiae corporis voluptate placeat.
+                            deserunt sit molestiae corporis voluptate placeat.</p>
+                        <div class="d-flex bd-highlight pb-2">
+                            <div class="w-100 bd-highlight">
+                                <p class="text-secondary mb-0 fs-6 px-3"><i class=" fa fa-heart-o me-3" aria-hidden="true"></i> Comment ...</p>
+                            </div>
+                            <div class="px-3 flex-shrink-1 bd-highlight">
+                                <i class="fas fa-ellipsis-v text-secondary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card  mx-auto mb-5">
+                    <div class=" card-body p-0">
+                        <div class=" card-title d-flex bd-highlight p-2">
+                            <div class="w-100 bd-highlight">
+                                <h4>Mi First photo</h4>
+                            </div>
+                            <div class="flex-shrink-1 bd-highlight">
+                                <p class="text-muted">12/14</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://free-images.com/md/9e46/white_bengal_tiger_tiger_0.jpg" alt="tiger" class="w-100">
+                        </div>
+                        <p class="fw-bolder pt-3 fs-6 px-3">23 likes</p>
+                        <p class="card-text px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quae
+                            harum explicabo temporibus illo alias deserunt sit molestiae corporis voluptate placeat.
+                            deserunt sit molestiae corporis voluptate placeat.</p>
+                        <div class="d-flex bd-highlight pb-2">
+                            <div class="w-100 bd-highlight">
+                                <p class="text-secondary mb-0 fs-6 px-3"><i class=" fa fa-heart-o me-3" aria-hidden="true"></i> Comment ...</p>
+                            </div>
+                            <div class="px-3 flex-shrink-1 bd-highlight">
+                                <i class="fas fa-ellipsis-v text-secondary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card  mx-auto mb-5">
+                    <div class=" card-body p-0">
+                        <div class=" card-title d-flex bd-highlight p-2">
+                            <div class="w-100 bd-highlight">
+                                <h4>Mi First video</h4>
+                            </div>
+                            <div class="flex-shrink-1 bd-highlight">
+                                <p class="text-muted">12/14</p>
+                            </div>
+                        </div>
+                        <div class="w-100">
+                            <video class="w-100" height="240" autoplay muted loop preload="auto" style="object-fit: cover;">
+                                <source class="w-100" src="https://player.vimeo.com/external/346036445.sd.mp4?s=98a73a063248b2b0b1d352e250c8358b7fa9e9d5&profile_id=164" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p class="fw-bolder pt-3 fs-6 px-3">23 likes</p>
+                        <p class="card-text px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quae
+                            harum explicabo temporibus illo alias deserunt sit molestiae corporis voluptate placeat.
+                            deserunt sit molestiae corporis voluptate placeat.</p>
+                        <div class="d-flex bd-highlight pb-2">
+                            <div class="w-100 bd-highlight">
+                                <p class="text-secondary mb-0 fs-6 px-3"><i class=" fa fa-heart-o me-3" aria-hidden="true"></i> Comment ...</p>
+                            </div>
+                            <div class="px-3 flex-shrink-1 bd-highlight">
+                                <i class="fas fa-ellipsis-v text-secondary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card  mx-auto mb-5">
+                    <div class=" card-body p-0">
+                        <div class=" card-title d-flex bd-highlight p-2">
+                            <div class="w-100 bd-highlight">
+                                <h4>Mi First photo</h4>
+                            </div>
+                            <div class="flex-shrink-1 bd-highlight">
+                                <p class="text-muted">12/14</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://free-images.com/md/1855/new_york_skyline_usa.jpg" alt="new york" class="w-100">
+                        </div>
+                        <p class="fw-bolder pt-3 fs-6 px-3">23 likes</p>
+                        <p class="card-text px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quae
+                            harum explicabo temporibus illo alias deserunt sit molestiae corporis voluptate placeat.
+                            deserunt sit molestiae corporis voluptate placeat.</p>
+                        <div class="d-flex bd-highlight pb-2">
+                            <div class="w-100 bd-highlight">
+                                <p class="text-secondary mb-0 fs-6 px-3"><i class=" fa fa-heart-o me-3" aria-hidden="true"></i> Comment ...</p>
+                            </div>
+                            <div class="px-3 flex-shrink-1 bd-highlight">
+                                <i class="fas fa-ellipsis-v text-secondary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card  mx-auto mb-5">
+                    <div class=" card-body p-0">
+                        <div class=" card-title d-flex bd-highlight p-2">
+                            <div class="w-100 bd-highlight">
+                                <h4>Mi First photo</h4>
+                            </div>
+                            <div class="flex-shrink-1 bd-highlight">
+                                <p class="text-muted">12/14</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://free-images.com/md/672a/pennsylvania_landscape_scenic_97427.jpg" alt="pennsylvania" class="w-100">
+                        </div>
+                        <p class="fw-bolder pt-3 fs-6 px-3">23 likes</p>
+                        <p class="card-text px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quae
+                            harum explicabo temporibus illo alias deserunt sit molestiae corporis voluptate placeat.
+                            deserunt sit molestiae corporis voluptate placeat.</p>
+                        <div class="d-flex bd-highlight pb-2">
+                            <div class="w-100 bd-highlight">
+                                <p class="text-secondary mb-0 fs-6 px-3"><i class=" fa fa-heart-o me-3" aria-hidden="true"></i> Comment ...</p>
+                            </div>
+                            <div class="px-3 flex-shrink-1 bd-highlight">
+                                <i class="fas fa-ellipsis-v text-secondary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-auto mb-5">
+                    <div class=" card-body p-0">
+                        <div class=" card-title d-flex bd-highlight p-2">
+                            <div class="w-100 bd-highlight">
+                                <h4>Mi First photo</h4>
+                            </div>
+                            <div class="flex-shrink-1 bd-highlight">
+                                <p class="text-muted">12/14</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://free-images.com/md/ce8c/rabbits_cute_svg.jpg" alt="rabbits" class="w-100">
+                        </div>
+                        <p class="fw-bolder pt-3 fs-6 px-3">23 likes</p>
+                        <p class="card-text px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quae
+                            harum explicabo temporibus illo alias deserunt sit molestiae corporis voluptate placeat.
+                            deserunt sit molestiae corporis voluptate placeat.</p>
+                        <div class="d-flex bd-highlight pb-2">
+                            <div class="w-100 bd-highlight">
+                                <p class="text-secondary mb-0 fs-6 px-3"><i class=" fa fa-heart-o me-3" aria-hidden="true"></i> Comment ...</p>
+                            </div>
+                            <div class="px-3 flex-shrink-1 bd-highlight">
+                                <i class="fas fa-ellipsis-v text-secondary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

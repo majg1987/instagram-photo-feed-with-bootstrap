@@ -1,0 +1,20 @@
+body {
+    font-family: 'Grandstander', cursive;
+}
+
+.multimedia {
+    object-fit: cover;
+}
+
+.nav-pills .nav-link.active {
+    background: gray;
+    color: white;
+}
+
+.nav-pills .nav-link {
+    color: gray;
+}
+
+.card {
+    max-width: 550px;
+}
